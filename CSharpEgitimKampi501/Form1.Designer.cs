@@ -49,6 +49,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblDistinctCategoryCount = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnListById = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +85,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(283, 26);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(649, 313);
+            this.dataGridView1.Size = new System.Drawing.Size(649, 357);
             this.dataGridView1.TabIndex = 3;
             // 
             // txtProductName
@@ -185,7 +186,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(17, 406);
+            this.label6.Location = new System.Drawing.Point(17, 435);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(182, 26);
             this.label6.TabIndex = 15;
@@ -195,7 +196,7 @@
             // 
             this.lblTotalProductCount.AutoSize = true;
             this.lblTotalProductCount.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTotalProductCount.Location = new System.Drawing.Point(204, 406);
+            this.lblTotalProductCount.Location = new System.Drawing.Point(204, 435);
             this.lblTotalProductCount.Name = "lblTotalProductCount";
             this.lblTotalProductCount.Size = new System.Drawing.Size(23, 26);
             this.lblTotalProductCount.TabIndex = 16;
@@ -205,7 +206,7 @@
             // 
             this.lblMaxPriceProductName.AutoSize = true;
             this.lblMaxPriceProductName.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMaxPriceProductName.Location = new System.Drawing.Point(204, 443);
+            this.lblMaxPriceProductName.Location = new System.Drawing.Point(204, 472);
             this.lblMaxPriceProductName.Name = "lblMaxPriceProductName";
             this.lblMaxPriceProductName.Size = new System.Drawing.Size(23, 26);
             this.lblMaxPriceProductName.TabIndex = 18;
@@ -215,7 +216,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(54, 443);
+            this.label8.Location = new System.Drawing.Point(54, 472);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(145, 26);
             this.label8.TabIndex = 17;
@@ -225,7 +226,7 @@
             // 
             this.lblDistinctCategoryCount.AutoSize = true;
             this.lblDistinctCategoryCount.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDistinctCategoryCount.Location = new System.Drawing.Point(204, 481);
+            this.lblDistinctCategoryCount.Location = new System.Drawing.Point(204, 510);
             this.lblDistinctCategoryCount.Name = "lblDistinctCategoryCount";
             this.lblDistinctCategoryCount.Size = new System.Drawing.Size(23, 26);
             this.lblDistinctCategoryCount.TabIndex = 20;
@@ -235,17 +236,28 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(54, 481);
+            this.label9.Location = new System.Drawing.Point(54, 510);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(143, 26);
             this.label9.TabIndex = 19;
             this.label9.Text = "Kategori Sayısı:";
             // 
+            // btnListById
+            // 
+            this.btnListById.Location = new System.Drawing.Point(91, 354);
+            this.btnListById.Name = "btnListById";
+            this.btnListById.Size = new System.Drawing.Size(123, 29);
+            this.btnListById.TabIndex = 21;
+            this.btnListById.Text = "Id\'ye Göre Listeleme";
+            this.btnListById.UseVisualStyleBackColor = true;
+            this.btnListById.Click += new System.EventHandler(this.btnListById_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 533);
+            this.ClientSize = new System.Drawing.Size(944, 574);
+            this.Controls.Add(this.btnListById);
             this.Controls.Add(this.lblDistinctCategoryCount);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblMaxPriceProductName);
@@ -299,6 +311,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblDistinctCategoryCount;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnListById;
     }
 }
 

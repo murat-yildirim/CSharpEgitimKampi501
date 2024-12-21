@@ -10,9 +10,9 @@ namespace CSharpEgitimKampi501.Repositories
     public interface IProductRepository
     {
         Task<List<ResultProductDto>> GetAllProductAsync();
-        Task CreateProductAsync(CreateProductDto createProductDto);
-        Task UpdateProductAsync(UpdateProductDto updateProductDto);
-        Task DeleteProductAsync(int id);
-        Task GetByProductIdAsync(int id);
+        Task<int> CreateProductAsync(CreateProductDto createProductDto);
+        Task<int> UpdateProductAsync(UpdateProductDto updateProductDto);
+        Task<int> DeleteProductAsync(int id);
+        Task<List<ResultProductDto>> GetByProductIdAsync(int id);
     }
 }
